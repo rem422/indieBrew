@@ -286,7 +286,7 @@ container {
     width: 90%;
     height: max-content;
     margin: 0 auto;
-    padding: 4rem .6rem;
+    padding: 3rem .6rem;
     border-radius: .6rem;
     box-shadow: var(--box-shadow);
     text-align: center;
