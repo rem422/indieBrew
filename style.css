@@ -303,8 +303,8 @@ container {
     margin-right: 0;
 }
 
-.nav_items .nav_btn a{
-    /* margin: 2rem 0; */
+.nav_items .nav_btn{
+    margin: 2rem 0;
 }
 }
 
