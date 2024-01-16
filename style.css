@@ -299,7 +299,7 @@ container {
 }
 
 .nav_items .nav_link {
-    margin: 2rem 0;
+    margin-bottom: 2rem;
     margin-right: 0;
 }
 }
