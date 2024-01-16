@@ -255,7 +255,6 @@ container {
 .hero_img {
     max-width: 400px;
 }
-
 }
 
 
@@ -268,13 +267,13 @@ container {
 @media screen and (max-width:768px) {
 .menu_btn {
     display: block;
-    }
+}
 
-    .menu_btn i.active::before {
-        content: '\58';
-        font-size: 1.5rem;
-        font-weight: bold;
-    }
+.menu_btn i.active::before {
+    content: '\58';
+    font-size: 1.5rem;
+    font-weight: bold;
+}
 
 .nav_items {
     background-color: var(--white);
@@ -305,7 +304,7 @@ container {
 }
 
 .nav_items .nav_btn a{
-    margin: 2rem 0;
+    /* margin: 2rem 0; */
 }
 }
 
@@ -317,9 +316,6 @@ container {
 .hero_info .hero_title {
     font-size: 2rem;
 }
-
-
-
 }
 
 
