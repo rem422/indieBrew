@@ -12,6 +12,7 @@ menuBtn.addEventListener('click', () => {
 
 menuItems.forEach(item => {
     item.addEventListener('click', () => {
+        menuBtn.classList.toggle('active');
         mobileMenu.classList.toggle('active');
     });
 });
