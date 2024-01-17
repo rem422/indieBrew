@@ -234,66 +234,42 @@ container {
     background-color: #FDFCF9;
 }
 
+.footer .footer_logo {
+    max-width: 150px;
+}
+
 .footer .footer_wrapper {
+    padding: 10rem 0 4rem 0;
     display: grid;
     grid-template-columns: repeat(5, auto);
-    grid-gap: 1rem;
-    padding: 5rem 0;
+    grid-gap: 2rem;
 }
 
-.footer .footer_info {
-    max-width: 400px;
+.footer_info {
+    max-width: 350px;
+    margin-right: 3rem;
 }
 
-.footer_info .footer_logo {
-    max-width: 120px;
-    margin-bottom: 1rem;
-}
-
-.footer_info .copyright {
-    margin-top: 2rem;
-    font-weight: 300;
-}
-
-.footer .footer_links .footer_links-title {
+.footer_links .footer_links-title {
     font-size: 1.2rem;
-    margin-bottom: .6rem;
+    margin-bottom: .8rem;
 }
 
-.footer .footer_links .footer_link {
+.footer_links .footer_link {
     display: inline-flex;
     flex-direction: column;
 }
 
-.footer .footer_links .footer_link a {
+.footer_links .footer_link a {
     color: var(--textColor);
     font-weight: 300;
-    margin-top: .8rem;
+    margin-bottom: 1rem;
     transition: var(--transition);
 }
 
-.footer .footer_links .footer_link a:hover  {
+.footer_links .footer_link a:hover {
     color: var(--btnColor);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -322,7 +298,7 @@ container {
 .hero_info .hero_title {
     font-size: 2.5rem;
     line-height: 3rem;
-    margin-bottom: 1rem;
+    margin: 1rem 0;
 }
 
 .hero_info .hero_text,
@@ -337,6 +313,14 @@ container {
 .hero_img {
     max-width: 400px;
 }
+
+.footer .footer_wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+}
+
+
+
 }
 
 
@@ -396,9 +380,10 @@ container {
 
 
 
-
-
-
+.footer .footer_wrapper {
+    display: grid;
+    grid-template-columns: 100%;
+}
 
 
 
@@ -426,7 +411,8 @@ container {
 
 .hero_info,
 .blog_info,
-.customer_info{
+.customer_info,
+.footer_info{
     max-width: 100%;
 }
 

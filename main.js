@@ -26,8 +26,3 @@ document.addEventListener('scroll', () => {
         navbar.classList.remove('shadow');
     }
 });
-
-// Year autoupdate feature
-const currentYear = new Date().getFullYear();
-const newYear = new Date(`january 01 ${currentYear + 1} 00:00:00`);
-year.innerHTML = currentYear;
