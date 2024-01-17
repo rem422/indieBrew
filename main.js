@@ -1,7 +1,8 @@
-
+const navbar = document.querySelector('.navbar');
 const menuBtn = document.querySelector('.navbar .menu_btn i');
 const mobileMenu = document.querySelector('.navbar .nav_items');
 const menuItems = document.querySelectorAll('.navbar .nav_items a');
+const year = document.getElementById('year');
 
 
 menuBtn.addEventListener('click', () => {
@@ -16,7 +17,6 @@ menuItems.forEach(item => {
 });
 
 // Scrolling Feature
-const navbar = document.querySelector('.navbar');
 document.addEventListener('scroll', () => {
     let scrolled = window.scrollY;
 
@@ -28,7 +28,6 @@ document.addEventListener('scroll', () => {
 });
 
 // Year autoupdate feature
-const year = document.getElementById('year');
 const currentYear = new Date().getFullYear();
 const newYear = new Date(`january 01 ${currentYear + 1} 00:00:00`);
-year.innerText = currentYear;
+year.innerHTML = currentYear;
