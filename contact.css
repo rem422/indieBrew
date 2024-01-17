@@ -53,7 +53,7 @@ section {
 }
 
 .container {
-    width: 90%;
+    width: 80%;
     margin: auto;
     flex-wrap: wrap;
 }
@@ -137,46 +137,104 @@ container {
     background: linear-gradient(151deg, rgba(255, 250, 254, 1) 0%, rgba(255, 245, 255, 1) 50%, rgba(255, 252, 255, 1) 100%);
 }
 
-.hero_wrapper{
+.contact_wrapper{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 6rem 0;
-    height: 100%;
+    gap: 2rem;
+    padding-top: 6rem ;
+    height: 100vh;
 }
 
-.hero_info .hero_title{
-    font-size: 3rem;
-    line-height: 4rem;
-    margin-bottom: 1rem;
+.contact_info .contact_title{
+    font-size: 2rem;
+    margin-bottom: 2rem;
 }
 
-.hero_info .hero_text{
-    font-weight: 300;
-    padding-bottom: 3rem;
+.contact .contact_info {
+    max-width: 450px;
 }
 
-.hero_info .hero_users {
-    padding-top: 3rem;
+.contact_info .contact_info_list .list_item{
+    display: inline-flex;
+    padding-bottom: 2rem;
+    gap: 1.2rem;
 }
 
-.hero_info .hero_users .users_img {
-    max-width: 200px;
-}
-
-.hero_info .hero_users p {
-    font-weight: 300;
-    padding-top: .6rem;
-}
-
-.hero_info .hero_users p span {
-    font-weight: 500;
+.contact_info .contact_info_list .list_item i{
+    font-size: 2rem;
     color: var(--btnColor);
 }
 
-.hero_img {
-    max-width: 600px;
+.contact_info .contact_info_list .list_item .item_text{
+    font-weight: 300;
 }
+
+.contact_info .contact_info_list .list_item .item_text span{
+    font-weight: 600;
+    color: var(--black);
+}
+
+.contact .contact_account {
+    display: inline-flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    background-color: var(--white);
+    max-width: 600px;
+    width: 100%;
+    height: max-content;
+    padding: 2.5rem;
+    border-radius: 10px;
+    box-shadow: var(--box-shadow);
+}
+
+.contact .contact_account .contact_account-title {
+    margin-bottom: 2rem;
+}
+
+.contact .contact_account label {
+    margin-bottom: .3rem;
+}
+.contact .contact_account input {
+    margin-bottom: 1.5rem;
+    width: 100%;
+    padding: 1rem;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    outline-color: var(--btnColor);
+}
+
+.contact .contact_account input ::placeholder {
+    font-size: 1rem;
+}
+
+.contact .contact_account .contact_accout-btn  {
+    padding: 1rem 1.4rem;
+    border-radius: .2rem;
+    border: 2px solid var(--btnColor);
+    transition: var(--transition);
+    width: 100%;
+    background-color: var(--btnColor);
+    text-align: center;
+    color: var(--white);
+    font-size: 1rem;
+    margin-top: 2rem;
+    transition: var(--transition);
+}
+
+.contact .contact_account .contact_accout-btn:hover {
+    background-color: transparent;
+    color: var(--btnColor);
+}
+
+
+
+
+
+
+
+
 
 
 
@@ -184,14 +242,15 @@ container {
 
 /* ----------------------MEDIA QUERIES---------------------- */
 @media only screen and (max-width:1280px) {
-.hero_wrapper {
-    gap: 2rem;
-    padding: 7rem 0;
+.contact_wrapper{
+    flex-direction: column;
+    padding: 1rem 0;
+    margin: 0;
+    gap: 0;
 }
 
-    .hero_info .hero_title {
-    font-size: 2.5rem;
-    line-height: 3rem;
+.contact .contact_info {
+    max-width: 500px;
 }
 }
 
