@@ -119,7 +119,7 @@ container {
     height: 100%;
 }
 
-.nav_items .nav_link .nav_link_img {
+.nav_items .nav_link a {
     display: flex;
     align-items: center;
     background-color: rgba(255, 255, 255, 0.604);
@@ -128,15 +128,6 @@ container {
     padding: .6rem .8rem;
 }
 
-.nav_items .nav_link a {
-    color: var(--black);
-    cursor: pointer;
-    transition: var(--transition);
-}
-
-.nav_items .nav_link:hover a {
-    color: var(--btnColor);
-}
 
 
 /* ----------------------HERO SECTION STYLING---------------------- */
