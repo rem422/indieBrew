@@ -142,7 +142,7 @@ container {
     align-items: center;
     justify-content: space-between;
     gap: 2rem;
-    padding-top: 6rem ;
+    padding: 6rem 0;
     height: 100vh;
 }
 
@@ -244,9 +244,7 @@ container {
 @media only screen and (max-width:1280px) {
 .contact_wrapper{
     flex-direction: column;
-    padding: 1rem 0;
-    margin: 0;
-    gap: 0;
+    padding: 9rem 0;
 }
 
 .contact .contact_info {
@@ -312,10 +310,7 @@ container {
     font-size: 2rem;
 }
 
-.hero_info,
-.blog_info,
-.customer_info,
-.footer_info{
+.contact .contact_info {
     max-width: 100%;
 }
 }
